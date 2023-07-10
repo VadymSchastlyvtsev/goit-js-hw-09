@@ -18,13 +18,14 @@ stopBtn.addEventListener('click', handlerStop);
  function handlerStart() {
     startBtn.disabled = true;
     stopBtn.disabled = false;
-    intervalId = setInterval(changeBackgroundColor, 1000);
+    validBtn = setInterval(changeBackgroundColor, 1000);
   };
 
 function handlerStop() {
+  
     startBtn.disabled = false;
     stopBtn.disabled = true;
-    clearInterval(intervalId);
+    clearInterval(validBtn);
   };
 
 
